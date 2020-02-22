@@ -1,7 +1,7 @@
 import { NextFunction, Request, Response } from 'express';
 import HttpStatusCode from 'http-status-codes';
 
-import { User } from '../entities/user/user.entity';
+import { User } from '../entities/user.entity';
 import IRequest from '../types/IRequest';
 import ApiResponse from './apiResponse';
 

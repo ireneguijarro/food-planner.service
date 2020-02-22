@@ -3,7 +3,7 @@ module.exports = {
   host: process.env.DB_HOST || 'localhost',
   username: process.env.DB_USER || 'root',
   // password: process.env.DB_PASSWORD || 'scout',
-  database: process.env.DB_NAME || 'test',
+  database: process.env.DB_NAME || 'food-planner',
   charset: 'utf8',
   driver: 'mysql',
   synchronize: process.env.NODE_ENV !== 'production',

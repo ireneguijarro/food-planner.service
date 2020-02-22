@@ -1,5 +1,5 @@
 import { Column, Entity, PrimaryGeneratedColumn, Unique } from 'typeorm';
-import { DateTimeEntity } from '../base/dateTimeEntity';
+import { DateTimeEntity } from './base/dateTimeEntity';
 
 @Entity('user_auth', { orderBy: {  id: 'ASC' } })
 export class User extends DateTimeEntity {

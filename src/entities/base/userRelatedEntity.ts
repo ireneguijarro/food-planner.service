@@ -1,6 +1,6 @@
 import { Column, JoinColumn, ManyToOne, PrimaryColumn } from 'typeorm';
 
-import { User } from '../user/user.entity';
+import { User } from '../user.entity';
 
 export class UserRelatedEntity {
   @Column()
