@@ -6,7 +6,7 @@ export class IngredientType {
     @PrimaryGeneratedColumn({type: 'bigint'})
     id: number
     
-    @Column()
+    @Column({unique: true})
     name: string;
 
     @OneToMany(type => Ingredient, ingredient => ingredient.id)

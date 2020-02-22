@@ -1,7 +1,7 @@
 import express from 'express';
 
-import userController from '../../controllers/user.controller';
-import userSchema from '../../constants/schema/user.schema';
+import userController from '../controllers/user.controller';
+import userSchema from '../constants/schema/user.schema';
 
 const router = express.Router();
 

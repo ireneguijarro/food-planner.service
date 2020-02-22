@@ -18,7 +18,8 @@ createConnection().then(() => {
     logger.info('database connection created');
     express.use(morgan('dev'));
 
-    express.use(authenticate);
+    // Auth Middleware
+    // express.use(authenticate);
 
     // Router
     express.use(application.url.base, indexRoute);
