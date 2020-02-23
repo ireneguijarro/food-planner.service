@@ -1,7 +1,7 @@
 import { NextFunction, Request, Response } from 'express';
 import HttpStatusCode from 'http-status-codes';
 
-import { User } from '../entities/user/user.entity';
+import { User } from '../entities/user.entity';
 import IRequest from '../types/IRequest';
 import ApiResponse from './apiResponse';
 
@@ -22,7 +22,7 @@ const extractCookieFromRequest = (req: Request, key: string) => {
   }
   if (req.headers.cookie) {
     const results = req.headers.cookie.split(';');
-    const filtered = results.filter((result) => {
+    const filtered = results.filter(result => {
       return result.startsWith(`${key}=`);
     });
     if (filtered.length > 0) {
